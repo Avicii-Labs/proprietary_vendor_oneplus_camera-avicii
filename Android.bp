@@ -1,0 +1,33 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+}
+
+android_app_import {
+    name: "OnePlusCameraService",
+    owner: "oneplus",
+    apk: "proprietary/system/priv-app/OnePlusCameraService/OnePlusCameraService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
+    name: "OnePlusCamera",
+    owner: "oneplus",
+    apk: "proprietary/system_ext/priv-app/OnePlusCamera/OnePlusCamera.apk",
+    overrides: [
+        "Aperture",
+        "Camera2",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
